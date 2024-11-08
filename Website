@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Dropshipping Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .product {
+            background: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h2 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+        .email-signup, .contact {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .email-signup h2, .contact h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .email-signup input[type="email"] {
+            padding: 0.5rem;
+            width: 70%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 1rem;
+        }
+
+        .email-signup button {
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Your Store Name</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Product Listings -->
+        <section class="product-list">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product Name 1</h2>
+                <p>$49.99</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h2>Product Name 2</h2>
+                <p>$59.99</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <h2>Product Name 3</h2>
+                <p>$39.99</p>
+            </div>
+        </section>
+
+        <!-- Email Signup Form -->
+        <section class="email-signup">
+            <h2>Stay Updated</h2>
+            <form action="submit-email" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@yourstore.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Store Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
